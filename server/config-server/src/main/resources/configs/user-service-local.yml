@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    include:
+      - eureka_client
+      - common
+
+server:
+  port: 5000
+
+

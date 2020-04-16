@@ -1,0 +1,5 @@
+registrationCenter:
+  - name: eureka8000
+    hostname: localhost
+    port: 8000
+    url: http://${registrationCenter[0].hostname}:${registrationCenter[0].port}/eureka
