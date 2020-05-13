@@ -16,7 +16,7 @@ public interface BaseService<T, K> {
         return null;
     }
 
-    default T find() {
+    default List<T> find() {
         return null;
     }
 

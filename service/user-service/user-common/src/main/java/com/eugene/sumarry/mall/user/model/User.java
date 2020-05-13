@@ -7,6 +7,8 @@ public class User extends BaseModel {
     private Long userId;
     private String userName;
     private String password;
+    private String phone;
+    private String avatar;
 
     public Long getUserId() {
         return userId;
@@ -30,5 +32,21 @@ public class User extends BaseModel {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }

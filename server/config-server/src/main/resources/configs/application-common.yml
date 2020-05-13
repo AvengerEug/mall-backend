@@ -9,3 +9,15 @@ jwt:
     # 24*60*60*15
     expiration: 1296000
   secret: eugene
+
+
+server:
+  tomcat:
+    basedir: ./tomcat
+    access-log-enabled: true
+    accesslog:
+      directory: ./access-log
+
+apilog:
+  logfolder:
+    folderPath: ${server.tomcat.basedir}/api-log

@@ -107,28 +107,10 @@
 
     <dependencies>
 
-        <!-- 使用非spring-boot-parent模块构建spring boot项目
-          参考链接: https://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/reference/htmlsingle/#using-boot-maven-without-a-parent
-        -->
-        <dependency>
-            <!-- Import dependency management from Spring Boot -->
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-dependencies</artifactId>
-            <version>2.0.4.RELEASE</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.0.4.RELEASE</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.5</version>
         </dependency>
 
     </dependencies>
@@ -136,6 +118,18 @@
     <!-- Spring Cloud Finchley SR2 版本 -->
     <dependencyManagement>
         <dependencies>
+            <!-- 使用非spring-boot-parent模块构建spring boot项目
+          参考链接: https://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/reference/htmlsingle/#using-boot-maven-without-a-parent
+        -->
+            <dependency>
+                <!-- Import dependency management from Spring Boot -->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.0.4.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>

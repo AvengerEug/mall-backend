@@ -6,7 +6,7 @@ public interface BaseDao<T, K> {
 
     void insert(T entity);
 
-    T update(T entity);
+    void update(T entity);
 
     List<T> getAll();
 

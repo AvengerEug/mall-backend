@@ -28,7 +28,7 @@ public class UserController extends BaseController {
 
     @GetMapping
     public Message index() {
-        Object goodsResult = RPCTemplate.exec(() -> {
+        /*Object goodsResult = RPCTemplate.exec(() -> {
             return goodsClient.index();
         });
 
@@ -38,9 +38,9 @@ public class UserController extends BaseController {
 
         Map<String, Object> map = new HashMap<>();
         map.put("goodsResult", goodsResult);
-        map.put("orderResult", orderResult);
+        map.put("orderResult", orderResult);*/
 
-        return Message.ok(map);
+        return Message.ok(userService.find());
     }
 
 

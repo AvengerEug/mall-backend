@@ -3,6 +3,18 @@ spring:
     include:
       - eureka_client
       - common
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/eugmall?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+    username: root
+    password:
+    driverClassName: com.mysql.jdbc.Driver
+
+mybatis:
+  mapperLocations: classpath*:mappers/*Mapper.xml
+  typeAliasesPackage: com.eugene.sumarry.mall.goods.model
+  typeHandlersPackage: com.eugene.sumarry.mall.goods.dao.typehandler
+  configuration:
+    cacheEnabled: true
 
 eureka:
   instance:
@@ -14,3 +26,4 @@ eureka:
 
 server:
   port: 6000
+

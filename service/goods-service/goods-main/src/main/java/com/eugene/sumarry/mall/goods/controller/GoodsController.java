@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/v1/goods")
 public class GoodsController extends BaseController {
 
-
     @GetMapping
     public Message index() {
         return Message.ok(new int[]{1, 2, 3, 4, 5});

@@ -15,16 +15,15 @@
     <dependencies>
         <dependency>
             <groupId>com.eugene.sumarry</groupId>
-            <artifactId>jwt-token</artifactId>
+            <artifactId>jwt-util</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jwt-util-1.0-SNAPSHOT.jar</systemPath>
+<!--            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/jwt-util-1.0-SNAPSHOT.jar</systemPath>-->
         </dependency>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <scope>provided</scope>
         </dependency>
 
         <!--
@@ -36,5 +35,6 @@
             <artifactId>jjwt</artifactId>
             <version>0.7.0</version>
         </dependency>
+
     </dependencies>
 </project>
