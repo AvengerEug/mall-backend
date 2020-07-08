@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: eureka-service
+    name: config-service
   profiles:
     active: native
   cloud:

@@ -159,59 +159,59 @@ INSERT INTO category(name, parent_id, level, store_id, ordered) SELECT "配料",
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("珍珠", -200, 0.00, "珍珠", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("波霸", -200, 0.00, "波霸", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("椰果", -200, 0.00, "椰果", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("仙草", -200, 0.00, "仙草", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("红豆", -200, 0.00, "红豆", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("燕麦", -200, 0.00, "燕麦", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("咖啡冻", -200, 0.00, "咖啡冻", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("布丁", -200, 0.00, "布丁", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("奶霜", -200, 0.00, "奶霜", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("冰淇淋", -200, 0.00, "冰淇淋", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("免费配料多", -200, 0.00, "免费配料多", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("免费配料少", -200, 0.00, "免费配料少", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("去糖改黑糖", -200, 0.00, "去糖改黑糖", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_id, store_id,
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("去糖改蜜", -200, 0.00, "去糖改蜜", (SELECT cate_id FROM category WHERE name = "配料"),
-(SELECT name FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), null, 0, 1589282191799, 0, 1589282191799, 0);
 
 
 -- 在找奶茶中添加一杯奶茶
@@ -219,5 +219,5 @@ INSERT INTO goods(goods_name, goods_count, goods_price, goods_description, cate_
 spec_ids, created_by, created_at, last_modified_by, last_modified_at, deleted)
 VALUES ("奶茶", -200, 10.00, "阿萨姆红茶搭配特选植脂末，香浓顺口，甄选多种配料，口感更佳",
 (SELECT cate_id FROM category WHERE name = "找奶茶"),
-(SELECT name FROM store WHERE name = "一点点"), "1,2,3", 0, 1589282191799, 0, 1589282191799, 0);
+(SELECT store_id FROM store WHERE name = "一点点"), "1,2,3", 0, 1589282191799, 0, 1589282191799, 0);
 

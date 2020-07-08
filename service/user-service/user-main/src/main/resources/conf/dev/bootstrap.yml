@@ -12,3 +12,6 @@ spring:
       uri: http://localhost:10000
   profiles:
     active: dev
+
+logger:
+  name: com.eugene.sumarry.mall.user

@@ -12,9 +12,9 @@ public final class RPCTemplate {
 
     public static <T> T exec(Supplier supplier) {
         Message message = (Message) supplier.get();
-        if (message.getStatusCode().equals(Message.OK)) {
+        if (Message.OK.equals(message.getStatusCode())) {
             return (T)message.getData();
-        } else if (message.getStatusCode().equals(Message.ERROR)) {
+        } else if (Message.ERROR.equals(message.getStatusCode())) {
             // 抛异常了
             logger.error("Feign client调用异常, 错误源: {}, 错误信息: {}", supplier, message.getErrorMessage());
             throw new BusinessException();

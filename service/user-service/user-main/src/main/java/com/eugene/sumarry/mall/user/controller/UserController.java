@@ -28,25 +28,21 @@ public class UserController extends BaseController {
 
     @GetMapping
     public Message index() {
-        /*Object goodsResult = RPCTemplate.exec(() -> {
-            return goodsClient.index();
-        });
+        Object goodsResult = RPCTemplate.exec(() -> goodsClient.index());
 
-        Object orderResult = RPCTemplate.exec(() -> {
-            return orderClient.index();
-        });
+        Object orderResult = RPCTemplate.exec(() -> orderClient.index());
 
         Map<String, Object> map = new HashMap<>();
         map.put("goodsResult", goodsResult);
-        map.put("orderResult", orderResult);*/
+        map.put("orderResult", orderResult);
 
-        return Message.ok(userService.find());
+        return Message.ok(map);
     }
 
 
     @PostMapping("/login")
     public Message login(@RequestBody Map<String, Object> map) {
-        String userName = (String) map.get("userName");
+        String userName = (String) map.get("phone");
         String password = (String) map.get("password");
         return Message.ok(userService.login(userName, password));
     }

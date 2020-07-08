@@ -2,7 +2,7 @@ spring:
   application:
     # 应用的名称，eureka会把这个名称当成实例名称，若实例名称都一致，则eureka会当作集群处理
     # 以后的服务调用，是通过这个服务名来调用的
-    name: user-service
+    name: order-service
   cloud:
     # spring cloud2.x版本 这个配置会失效
     loadbalancer:
@@ -14,4 +14,4 @@ spring:
     active: local
 
 logger:
-  name: com.eugene.sumarry.mall.user
+  name: com.eugene.sumarry.mall.order

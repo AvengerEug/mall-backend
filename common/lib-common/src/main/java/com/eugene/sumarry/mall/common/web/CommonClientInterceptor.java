@@ -28,7 +28,7 @@ public class CommonClientInterceptor implements RequestInterceptor {
                 requestTemplate.header(name, values);
 
             }
-            logger.info("feign interceptor header:{}", requestTemplate);
+            logger.debug("feign interceptor header:{}", requestTemplate);
         }
 
     }

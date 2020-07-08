@@ -38,7 +38,7 @@ public class JWTAuthFilter extends OncePerRequestFilter {
 
             String jwtToken = request.getHeader(Constants.JWT_TOKEN);
             saveCurrentId(jwtToken);
-            logger.info(jwtToken);
+            // logger.info(jwtToken);
         }
 
         chain.doFilter(request, response);
